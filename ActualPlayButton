@@ -1,0 +1,25 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class MainMenu :MonoBehaviour
+{
+    public Button button; 
+    
+ public string Game; 
+    
+    void Start()
+    {
+
+        button.onClick.AddListener(LoadScene);
+        
+       
+    }
+
+    void LoadScene()
+    {
+
+        SceneManager.LoadScene("SampleScene"); 
+        
+    }
+}
